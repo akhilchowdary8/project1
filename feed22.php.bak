@@ -1,0 +1,28 @@
+<?php
+$servername="localhost";
+$database="college";
+$username="root";
+$password="";
+$conn=mysqli_connect($servername,$username,$password,$database);
+if(isset($_POST['sub']))
+{
+$i=$_POST['id'];
+$r1=$_POST['rating1'];
+$r2=$_POST['rating2'];
+$r3=$_POST['rating3'];
+$r4=$_POST['commentText'];
+
+$sql_query1="INSERT INTO `feedback`(`id`, `rating1`, `rating2`, `rating3`, `suggestions`) VALUES ('$i','$r1','$r2','$r3','$r4')";
+if (mysqli_query($conn,$sql_query1))
+{
+$query=mysqli_query($connection,$sql_query1);
+while($rows=mysqli_fetch_array($query)){ ?>
+<tr>
+<td><?php echo $rows['name']; ?></td>
+<td><?php echo $rows['age']; ?></td>
+<td><?php echo $rows['mobile']; ?></td>
+<td><?php echo $rows['email']; ?></td>
+</tr>
+}
+}
+?>

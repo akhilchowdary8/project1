@@ -1,0 +1,24 @@
+<?php
+$email="akhilchowdary8112@gmail.com";
+$subject = "Blood Donation System Remainder";
+$body = "Hi, This is  email send by Blood Donation System requires Blood";
+$headers = "From: dinesh email";
+if (mail($email, $subject, $body, $headers)) {
+    echo "Email successfully sent to ". $email . "<br>";
+} else {
+    echo "Email sending failed...";
+}
+/*
+$na=$_POST['nm'];
+$conn = mysqli_connect("localhost", "root", "","blooddonation");
+$sql="select Email from registration where BloodGroup='$na'  ";
+$res = $conn->query($sql);
+while($row = $res->fetch_assoc()){
+	if (mail($row["Email"], $subject, $body, $headers)) {
+    echo "Email successfully sent to ". $row["Email"] . "<br>";
+} else {
+    echo "Email sending failed...";
+}
+}
+*/
+?>

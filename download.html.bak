@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>ClassWalls - TimeTable</title>
+	<link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="dnldstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="wrapper">
+<ul>
+<li><a href="file:///C:/Users/KVAKH/OneDrive/Desktop/ClassWalls/Website/Home.html"><i class="fa fa-chevron-left"></i>Go Back<a></li>
+</ul>
+<a href="file:///C:/Users/KVAKH/OneDrive/Desktop/ClassWalls/Website/Home.html"><img src="logo1.png" height=78 width=100></img></a>
+</div>
+<div class="form">
+<a href="./3-1tt.pdf" download class="download-btn">Download
+        <i class="fa fa-download"></i>
+</a>
+</div>
+</body>
+</html>

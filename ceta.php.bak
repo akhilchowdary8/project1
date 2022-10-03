@@ -1,0 +1,26 @@
+<?php
+$servername="localhost";
+$database="college";
+$username="root";
+$password="";
+$conn=mysqli_connect($servername,$username,$password,$database);
+if(isset($_POST['sub']))
+{
+$email=$_POST['f'];
+$email=$_POST['l'];
+$=$_POST['e'];
+$=$_POST['p'];
+$=$_POST['language'];
+$=$_POST['country'];
+$sql_query="INSERT INTO `college_profiles`(`e-mail`, `password`, `College_Id`) VALUES ('$email','$password','$roll_no')";
+if (mysqli_query($conn,$sql_query))
+{
+echo "registered successfully"; 
+}
+else
+{
+echo "false";
+}
+mysqli_close($conn);
+}
+?>

@@ -1,0 +1,77 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="icon" href="favicon.png" type="image/png">
+<title>ClassWalls - Feedback</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+
+background-color: #AED6F1;
+font-family: sans-serif;
+}
+.table-container{
+padding: 0 10%;
+margin: 40px auto 0;
+}
+
+.table{
+width:100%;	
+border-collapse: collapse;
+}
+
+.table thead{
+background-color: #ee2828;
+}
+
+.table thead tr th{
+font-size: 14px;
+font-weight: medium;
+letter-spacing: 0.35px;
+color: #FFFFFF;
+opacity: 1;
+padding: 12px;
+vertical-align: top;
+border: 1px solid #dee2e685;
+}
+.table tbody tr td{
+font-size: 14px;
+letter-spacing: 0.35px;
+font-weight: normal;
+color: #f1f1f1;
+background-color: #3c3f44;
+padding: 8px;
+text-align: center;
+border: 1px solid #dee2e;
+}
+a{
+color:white;
+text-decoration: underline;
+</style>
+</head>
+<body>
+<div class="table-container">
+<table class="table">
+<thead>
+<tr>
+<th>Name</th>
+<th>ID</th>
+<th>Feedback</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K.VENKATESH</td>
+<td><input type="text" name="id"></input>
+<td><a href="fd1.html">Open</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
